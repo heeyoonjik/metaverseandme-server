@@ -9,6 +9,7 @@ app.get("/data", async (req, res) => {
     { name: "남지수", content: "멋지다" },
     { name: "박상민", content: "춥다" },
     { name: "김희윤", content: "배불러" },
+    { name: "남", content: "우옹" },
   ];
   res.send(data);
 });
