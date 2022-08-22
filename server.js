@@ -24,3 +24,15 @@ app.get("/data", async (req, res) => {
     ];
   res.send(data);
 });
+
+
+app.use(express.json());
+
+app.use(express.urlencoded({
+  extended: true
+}))
+
+app.post('/data', (req, res) => {
+  const result = req.body;
+  res.send(result);
+})
