@@ -5,96 +5,20 @@ app.listen(process.env.PORT || 8080, function () {});
 
 app.get("/data", async (req, res) => {
   let data = {
-    "days": [
+    days: [
       {
-        "id": 1,
-        "day": 1
+        "name": "남지수",
+        "content": "안녕",
       },
       {
-        "id": 2,
-        "day": 2
+        "name": "지수남",
+        "content": "반가워",
       },
       {
-        "id": 3,
-        "day": 3
+        "name": "남수지",
+        "content": "해위",
       },
-      {
-        "day": 4,
-        "id": 4
-      }
     ],
-    "words": [
-      {
-        "id": 1,
-        "day": 1,
-        "eng": "book",
-        "kor": "책",
-        "isDone": false
-      },
-      {
-        "id": 3,
-        "day": 2,
-        "eng": "car",
-        "kor": "자동차",
-        "isDone": false
-      },
-      {
-        "id": 5,
-        "day": 3,
-        "eng": "school",
-        "kor": "학교",
-        "isDone": false
-      },
-      {
-        "id": 6,
-        "day": 3,
-        "eng": "pencil",
-        "kor": "연필",
-        "isDone": false
-      },
-      {
-        "day": "3",
-        "eng": "window",
-        "kor": "창문",
-        "isDone": false,
-        "id": 7
-      },
-      {
-        "day": "3",
-        "eng": "house",
-        "kor": "집",
-        "isDone": false,
-        "id": 8
-      },
-      {
-        "day": "2",
-        "eng": "mouse",
-        "kor": "쥐",
-        "isDone": false,
-        "id": 9
-      },
-      {
-        "day": "4",
-        "eng": "monkey",
-        "kor": "원숭이",
-        "isDone": false,
-        "id": 10
-      },
-      {
-        "day": "4",
-        "eng": "apple",
-        "kor": "사과",
-        "isDone": false,
-        "id": 11
-      },
-      {
-        "day": "3",
-        "eng": "apple",
-        "kor": "사과",
-        "isDone": false,
-        "id": 12
-      }
-    ]
-  }
+  };
   res.send(data);
 });
