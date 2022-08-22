@@ -5,7 +5,7 @@ app.listen(process.env.PORT || 8080, function () {});
 
 app.get("/data", async (req, res) => {
   let data = {
-    days: [
+    Comment: [
       {
         "name": "남지수",
         "content": "안녕",
